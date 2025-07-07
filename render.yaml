@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: speech-analysis-tool
+    env: python
+    buildCommand: pip install --upgrade pip setuptools wheel && pip install -r requirements.txt && python -c "import nltk; nltk.download('punkt', quiet=True)"
+    startCommand: gunicorn app:app
+    plan: free
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9

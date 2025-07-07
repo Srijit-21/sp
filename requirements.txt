@@ -1,7 +1,7 @@
 flask==3.0.3
 speechrecognition==3.10.4
 pydub==0.25.1
-librosa==0.10.2
+librosa==0.8.1
 scikit-learn==1.5.1
 nltk==3.8.1
 numpy==1.26.4
